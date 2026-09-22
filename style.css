@@ -124,6 +124,41 @@ section {
 
 /* Responsif untuk HP */
 @media (max-width: 768px) {
+    /* --- NAVBAR RESPONSIVE --- */
+    nav {
+        padding: 15px 20px; /* Kurangi jarak padding agar tidak memakan tempat */
+        flex-direction: column; /* Menu ditumpuk ke bawah jika layar terlalu sempit */
+        gap: 15px;
+    }
+    
+    nav .nav-links {
+        display: flex;
+        flex-wrap: wrap; /* Mencegah menu bertumpukan keluar layar */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav .nav-links a {
+        font-size: 0.9rem; /* Perkecil sedikit ukuran font */
+    }
+
+    /* --- HERO SECTION RESPONSIVE --- */
+    .hero {
+        flex-direction: column-reverse; /* Teks di bawah, Foto di atas (atau sesuaikan seleramu) */
+        text-align: center; /* Teks rata tengah agar rapi di layar kecil */
+        padding: 100px 20px 50px; /* Sesuaikan jarak atas agar tidak tertutup navbar */
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem; /* Perkecil ukuran judul utama */
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
     .main-footer {
         padding: 50px 20px 20px;
     }
@@ -643,7 +678,7 @@ body {
 }
 
 /* Jika layar besar (Laptop/Tablet), ubah jadi menyamping */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .bio-container {
         flex-direction: row;
         align-items: flex-start;
