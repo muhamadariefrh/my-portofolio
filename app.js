@@ -12,6 +12,29 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1 
     });
 
+    // ==========================================
+    // FUNGSI HAMBURGER MENU NAVBAR
+    // ==========================================
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+        // Toggle menu saat hamburger diklik
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        });
+
+        // Tutup otomatis menu saat salah satu tautan diklik
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('nav-active');
+                hamburger.classList.remove('toggle');
+            });
+        });
+    }
+
     const hiddenElements = document.querySelectorAll('.fade-in');
     hiddenElements.forEach((el) => observer.observe(el));
 

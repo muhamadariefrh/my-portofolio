@@ -9,6 +9,23 @@ section {
     padding: 40px 0;
 }
 
+/* --- TAMPILAN HAMBURGER DI DESKTOP (DISEMBUNYIKAN) --- */
+.hamburger {
+    display: none; /* Sembunyikan di layar besar */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 100;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; /* Ganti dengan warna teks navbarmu */
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
 /* ========================================== */
 /* FOOTER STYLE                               */
 /* ========================================== */
@@ -124,22 +141,53 @@ section {
 
 /* Responsif untuk HP */
 @media (max-width: 768px) {
-    /* --- NAVBAR RESPONSIVE --- */
     nav {
-        padding: 15px 20px; /* Kurangi jarak padding agar tidak memakan tempat */
-        flex-direction: column; /* Menu ditumpuk ke bawah jika layar terlalu sempit */
-        gap: 15px;
-    }
-    
-    nav .nav-links {
-        display: flex;
-        flex-wrap: wrap; /* Mencegah menu bertumpukan keluar layar */
-        justify-content: center;
-        gap: 15px;
+        position: relative;
+        justify-content: space-between;
+        padding: 15px 20px;
     }
 
-    nav .nav-links a {
-        font-size: 0.8rem; /* Perkecil sedikit ukuran font */
+    .hamburger {
+        display: flex; /* Munculkan garis 3 di HP */
+    }
+
+    /* Modifikasi kotak daftar menu menjadi dropdown */
+    nav .nav-links {
+        position: absolute;
+        top: 100%; /* Tepat di bawah navbar */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; /* Warna background menu */
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        
+        /* Kondisi awal: Tersembunyi dan terangkat ke atas */
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        z-index: 99;
+    }
+
+    /* Class ini akan dipanggil oleh JavaScript saat diklik */
+    nav .nav-links.nav-active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Animasi Garis 3 berubah menjadi tanda (X) */
+    .hamburger.toggle .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.toggle .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.toggle .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     /* --- HERO SECTION RESPONSIVE --- */
