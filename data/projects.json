@@ -23,33 +23,38 @@
     "type": "MM",
     "tools": ["Canva", "Sony α6000"],
     "description": "Pembuatan aset visual marketing beserta poster kebutuhan klinik.",
-    "image": "./assets/img/projects/clinic-reels-cover.jpg",
+    "image": "./assets/img/projects/thumbnailprojek2.jpg",
     "detail": {
       "layoutStyle": "carousel",  
       "fullDescription": "Dalam proses pembuatan flyer ataupun poster kebutuhan klinik, saya bertanggung jawab mengolah kebutuhan promosi menjadi desain visual yang informatif, menarik, dan mudah dipahami. Proses dimulai dengan memahami tujuan campaign, mengidentifikasi target audiens, serta mengumpulkan informasi penting seperti layanan, benefit, harga, dan periode promosi. Selanjutnya, saya menyusun konsep visual, menentukan hierarki informasi, memilih warna dan tipografi, hingga merancang layout yang sesuai dengan identitas klinik. Dalam pengerjaannya, saya memastikan setiap informasi tersampaikan dengan jelas, tetap menjaga keseimbangan komposisi, serta memperhatikan konsistensi visual. Ketika menghadapi kendala seperti keterbatasan ruang, banyaknya informasi, atau layout yang kurang seimbang, saya melakukan penyesuaian pada tata letak, ukuran teks, dan elemen visual agar desain tetap nyaman dibaca tanpa menghilangkan informasi penting. Hasil akhirnya adalah materi promosi yang tidak hanya menarik secara visual, tetapi juga mampu menyampaikan pesan campaign secara efektif dan mendukung kebutuhan komunikasi klinik.",
       "mediaList": [
-        { "type": "image", "url": "./assets/img/projects/abu.jpg", "caption": "Poster Abu Vulkanik" },
-        { "type": "image", "url": "./assets/img/projects/flyer2.jpg", "caption": "Flyer Edukasi Kesehatan 2" },
-        { "type": "video", "url": "https://www.youtube.com/embed/contoh-link-video", "caption": "Video Reels Campaign (TikTok/IG)" },
-        { "type": "image", "url": "./assets/img/projects/insight.jpg", "caption": "Screenshot Insight: Menjangkau 50k+ Akun & Engagement Tinggi" }
+        { "type": "image", "url": "./assets/img/projects/flyer/abu.jpg", "caption": "Poster Abu Vulkanik" },
+        { "type": "image", "url": "./assets/img/projects/flyer/demam.jpg", "caption": "Promo MCU Demam" },
+        { "type": "image", "url": "./assets/img/projects/flyer/homecare.jpg", "caption": "Promo Homecare" },
+        { "type": "image", "url": "./assets/img/projects/flyer/kesuburan.jpg", "caption": "Promo Kesuburan" },
+        { "type": "image", "url": "./assets/img/projects/flyer/narkoba.jpg", "caption": "Promo Narkoba" },
+        { "type": "image", "url": "./assets/img/projects/flyer/maulid.jpg", "caption": "Poster Maulid" },
+        { "type": "image", "url": "./assets/img/projects/flyer/baby.jpg", "caption": "Promo Pijat Bayi" },
+        { "type": "image", "url": "./assets/img/projects/flyer/usg.jpg", "caption": "Promo USG" },
+        { "type": "image", "url": "./assets/img/projects/flyer/event.jpg", "caption": "Poster Fasilitator Event" },
+        { "type": "image", "url": "./assets/img/projects/flyer/booster.jpg", "caption": "Promo Infus Booster" }
       ]
     }
   },
   {
     "id": 3,
-    "title": "Social Media Konten (Video)",
+    "title": "Social Media Konten (Video Reels/Tiktok)",
     "category": "Multimedia",
     "type": "MM",
     "tools": ["Canva", "Capcut", "Sony α6000", "Mic Eksternal"],
-    "description": "Membuat Konten Reels/Tiktok untuk klinik.",
-    "image": "./assets/img/projects/clinic-reels-cover.jpg",
+    "description": "Membuat Konten Reels/Tiktok untuk klinik berdasarkan tren yang sedang berjalan.",
+    "image": "./assets/img/projects/thumbnailprojek3.jpg",
     "detail": {
-      "fullDescription": "Campaign marketing digital untuk meningkatkan *brand awareness* klinik kesehatan melalui konten visual interaktif di Instagram dan TikTok.",
+        "layoutStyle":"carousel",
+      "fullDescription": "Dalam proses pembuatan konten Reels dan TikTok untuk klinik, saya bertanggung jawab mengembangkan ide menjadi konten video yang informatif, menarik, dan sesuai dengan kebutuhan audiens, baik untuk memperkenalkan profil klinik, mempromosikan layanan, maupun menghadirkan konten hiburan yang ringan dan relevan. Proses dimulai dengan memahami tujuan konten, menentukan target audiens, serta menyusun konsep dan alur cerita yang sesuai. Selanjutnya, saya terlibat dalam proses produksi, mulai dari pengambilan gambar, penyusunan materi, hingga editing video dengan memperhatikan visual, audio, tempo, dan penyampaian pesan. Dalam menghadapi tantangan seperti keterbatasan materi, durasi video yang singkat, atau kebutuhan menyampaikan informasi medis secara sederhana, saya menyesuaikan konsep, memilih pendekatan visual yang tepat, serta menyusun penyampaian pesan agar tetap jelas dan mudah dipahami. Melalui proses ini, saya berupaya menghasilkan konten yang tidak hanya menarik untuk ditonton, tetapi juga mampu membangun kedekatan dengan audiens, memperkuat citra klinik, dan mendukung tujuan komunikasi maupun promosi.",
       "mediaList": [
-        { "type": "image", "url": "./assets/img/projects/flyer1.jpg", "caption": "Flyer Promosi Program Diskon 1" },
-        { "type": "image", "url": "./assets/img/projects/flyer2.jpg", "caption": "Flyer Edukasi Kesehatan 2" },
-        { "type": "video", "url": "https://www.youtube.com/embed/contoh-link-video", "caption": "Video Reels Campaign (TikTok/IG)" },
-        { "type": "image", "url": "./assets/img/projects/insight.jpg", "caption": "Screenshot Insight: Menjangkau 50k+ Akun & Engagement Tinggi" }
+        { "type": "tiktok", "url": "7629151908225142037", "caption": "Konten Tiktok 1" },
+        { "type": "tiktok", "url": "7606478625516424468", "caption": "Konten Tiktok 2" }
       ]
     }
   }
