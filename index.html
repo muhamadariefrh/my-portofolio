@@ -10,11 +10,11 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Porto.</div>
+            <div class="logo">MARH.</div>
             <ul class="nav-links">
                 <li><a href="#portfolio-section">Beranda</a></li>
-                <li><a href="#profile-section">Profile</a></li>
-                <li><a href="#summary-section">Summary</a></li>
+                <li><a href="#profile-section">Tentang Saya</a></li>
+                <li><a href="#summary-section">Ringkasan</a></li>
             </ul>
         </div>
     </nav>
@@ -31,13 +31,13 @@
         
         <!-- 3. Section Portofolio (Beranda) -->
         <section id="portfolio-section" class="portfolio-section fade-in">
-            <h2 class="section-title">Karya & Project</h2>
+            <h2 class="section-title">Proyek</h2>
             <div id="project-container" class="grid-container"></div>
         </section>
 
         <!-- 4. Section Profile (Isi CV & Biodata) -->
         <section id="profile-section" class="profile-section fade-in">
-            <h2 class="section-title fade-in">Profile</h2>
+            <h2 class="section-title fade-in">Tentang Saya</h2>
             <div class="profile-card fade-in" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                 <p>Saya merupakan mahasiswa Teknik Informatika Universitas Muhammadiyah Prof. Dr. Hamka yang memiliki ketertarikan pada bidang teknologi, pengembangan web, jaringan komputer, dan desain multimedia. Saya memiliki pengalaman dalam pengelolaan jaringan berbasis MikroTik, pengembangan perangkat lunak, serta pembuatan konten visual untuk kebutuhan promosi dan media sosial. 
                 <p><br>Selain itu, saya memiliki pengalaman mengerjakan proyek penelitian berbasis Computer Vision menggunakan YOLO untuk mendeteksi arus kendaraan, serta pengalaman profesional di bidang multimedia, mulai dari perancangan tata letak hingga pengelolaan konten digital.</p>
@@ -46,7 +46,7 @@
                 <!-- Kamu bisa buat layout 2 kolom pakai grid/flexbox di sini nantinya -->
                     <!-- Kolom Kiri: Biodata & Pendidikan -->
                 <div class="profile-card fade-in" style="padding: 25px;">
-                    <h3 style="margin-bottom: 20px;">Tentang Saya</h3>
+                    <h3 style="margin-bottom: 20px;">Biodata</h3>
                     
                     <div class="bio-container">
                         <!-- Bagian Kiri: Foto Profile -->
@@ -109,10 +109,12 @@
          <!-- Ubah bagian Progress Bar di dalam section Summary -->
 
         <section id="summary-section" class="summary-section fade-in">
-            <h2 class="section-title">Summary</h2>
+            <h2 class="section-title">Ringkasan</h2>
             <div class="summary-content">
                 <p>Perjalanan saya dalam bidang Teknologi Informasi dan Multimedia membentuk kombinasi kemampuan teknis dan kreativitas visual yang saling melengkapi. Melalui latar belakang pendidikan Teknik Informatika, saya mengembangkan keterampilan dalam pengelolaan jaringan komputer, pemrograman, serta eksplorasi teknologi berbasis Computer Vision. Di sisi lain, pengalaman profesional di bidang multimedia memperluas kemampuan saya dalam merancang materi visual, mengelola konten digital, dan memenuhi kebutuhan komunikasi promosi. Perpaduan kedua bidang ini mengajarkan saya untuk melihat sebuah kebutuhan tidak hanya dari sisi teknis, tetapi juga dari sisi visual dan pengalaman pengguna. Saya terus mengembangkan diri untuk menggabungkan logika, kreativitas, dan kemampuan problem-solving dalam menghasilkan karya serta solusi digital yang fungsional, komunikatif, dan relevan dengan kebutuhan.</p>
-                
+                <div class="profile-card fade-in" style="background: rgb(229, 229, 229); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 20px;">Distribusi Pengalaman Proyek</h3>
+                    <p>Visualisasi berikut menggambarkan distribusi pengalaman proyek saya, baik selama menempuh pendidikan akademik maupun dalam perjalanan karier profesional.</p>
                     <div class="progress-container">
                         <div class="progress-label">
                             <span>Teknik Informatika</span>
@@ -136,14 +138,65 @@
                             <div id="mm-bar" class="progress-fill mm-fill" style="--target: 0%;"></div>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <!-- 6. Footer (Paling Bawah) -->
-    <footer>
-        <p>&copy; 2026 MARH.</p>
+    <footer class="main-footer fade-in">
+        <div class="footer-container fade-in">
+            
+            <!-- Kolom 1: Branding & Bio -->
+            <div class="footer-col footer-about">
+                <h2 class="footer-logo">MARH<span>.</span></h2>
+                <p>Multimedia Specialist & IT Enthusiast. Menggabungkan kreativitas visual dengan logika pemrograman untuk menciptakan pengalaman digital yang menarik.</p>
+            </div>
+
+            <!-- Kolom 2: Tautan Cepat -->
+            <div class="footer-col footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <!-- Sesuaikan href dengan ID section kamu (misal id="portofolio") -->
+                    <li><a href="#portfolio-section">Beranda</a></li>
+                    <li><a href="#profile-section">Tentang Saya</a></li>
+                    <li><a href="#summary-section">Ringkasan</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Media Sosial -->
+            <div class="footer-col footer-social">
+                <h3>Mari Terhubung</h3>
+                <p>Jelajahi karya saya atau sapa saya secara langsung melalui platform berikut:</p>
+                <div class="social-wrapper">
+                    
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/muhamadariefrh_" target="_blank" class="soc-btn ig-btn" title="Instagram">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/6289521181208" target="_blank" class="soc-btn wa-btn" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/muhamadariefrh2003" target="_blank" class="soc-btn in-btn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/muhamadariefrh" target="_blank" class="soc-btn gh-btn" title="GitHub">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MARH. Dibuat dengan hati dan antusiasme yang tinggi. </p>
+        </div>
     </footer>
     <!-- Modal / Pop-up Detail Project -->
     <div id="project-modal" class="modal-overlay">
