@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Microsoft Office Specialist",
+    "issuer": "Microsoft",
+    "thumbnail": "./assets/img/projects/MOS.png",
+    "details": [
+      { 
+        "image": "./assets/img/projects/sertiMOS.jpg", 
+        "note": "Microsft Excell 2016 Specialist" 
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Python : Entry Level",
+    "issuer": "Skilvul",
+    "thumbnail": "./assets/img/projects/python.png",
+    "details": [
+      { 
+        "image": "./assets/img/projects/pythondasar.jpg", 
+        "note": "Python Dasar" 
+      },
+      { 
+        "image": "./assets/img/projects/algorithm.jpg", 
+        "note": "Algoritma & Struktur Data Python" 
+      },
+      { 
+        "image": "./assets/img/projects/pythonlanjut.jpg", 
+        "note": "Python Lanjutan" 
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "TOEFL Prediction",
+    "issuer": "English Skill Course",
+    "thumbnail": "./assets/img/projects/elskill.png",
+    "details": [
+      { 
+        "image": "./assets/img/projects/sertifTOEFL.jpg", 
+        "note": "TOEFL Prediction - 473" 
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "TOEFL Prediction",
+    "issuer": "Pusat Pengembangan Bahasa dan BIPA UHAMKA",
+    "thumbnail": "./assets/img/projects/bipa.png",
+    "details": [
+      { 
+        "image": "./assets/img/projects/sertiTOEFLBIPA.jpg", 
+        "note": "TOEFL Prediction - 460" 
+      }
+    ]
+  }
+]

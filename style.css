@@ -1,0 +1,576 @@
+html {
+    /* Ini kunci utama untuk efek scrolling animasi */
+    scroll-behavior: smooth;
+}
+
+/* Offset agar judul section tidak tertutup navbar saat di-scroll */
+section {
+    scroll-margin-top: 80px; 
+    padding: 40px 0;
+}
+
+/* Styling Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Bagian Header / Hero */
+.hero {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Bagian Portofolio */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+/* Grid Layout untuk Card */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Desain Kartu (Card) */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.category {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tools {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/*PEMISAHANN
+
+
+/* Styling Navbar */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    position: sticky; /* Membuat navbar tetap di atas saat di-scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Styling Summary & Progress Bar ala UI Game */
+.summary-section {
+    margin-bottom: 60px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.summary-content p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.progress-container {
+    margin-bottom: 25px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Background garis yang kosong */
+.progress-track {
+    width: 100%;
+    height: 18px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Garis yang terisi (Progress Fill) */
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    width: 0; /* Mulai dari 0 untuk animasi */
+    animation: fillBar 1.5s cubic-bezier(0.1, 0.7, 1.0, 0.1) forwards;
+}
+
+/* Warna pembeda untuk TI dan Multimedia */
+.ti-fill {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+}
+
+.mm-fill {
+    background: linear-gradient(90deg, #c0392b, #e74c3c);
+}
+
+/* Keyframe untuk efek loading mengisi bar */
+@keyframes fillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--target);
+    }
+}
+
+/* PROFILE SERTIFIKAT
+/* Layout Grid untuk Sertifikat */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+/* Desain Kartu Sertifikat */
+.cert-card {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: #2980b9;
+}
+
+.cert-card img {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    object-fit: contain; /* Biarkan thumbnail terpotong agar seragam */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cert-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.cert-info h4 {
+    font-size: 0.85rem;
+    color: #2c3e50;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Menambahkan titik-titik jika teks terlalu panjang */
+}
+
+.cert-info p {
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/*ANIMASI FADE SLIDE*/
+
+/* =========================================
+   10. ANIMASI MUNCUL SAAT DI-SCROLL (REVEAL)
+========================================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px); /* Elemen digeser ke bawah sejauh 50px */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0); /* Elemen kembali ke posisi semula */
+}
+
+/* PERBAIKAN ANIMASI PROGRESS BAR: 
+   Agar baru jalan SAAT section-nya muncul di layar */
+.progress-fill {
+    width: 0; /* Pastikan mulai dari 0 */
+    /* Hapus baris 'animation: fillBar...' yang lama di class ini (jika ada) */
+}
+
+/* Animasi baru ditembakkan SAAT parent-nya mendapat class .show */
+.summary-section.show .progress-fill {
+    animation: fillBar 1.5s cubic-bezier(0.1, 0.7, 1.0, 0.1) forwards;
+    /* Tambahkan sedikit jeda biar efeknya lebih dramatis */
+    animation-delay: 0.3s; 
+}
+
+
+/*POPUP
+
+
+/* Styling Modal Overlay (Latar Belakang Gelap Transparan) */
+.modal-overlay {
+    display: none; /* Sembunyikan secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Kotak Konten Modal */
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: scaleUp 0.3s ease;
+}
+
+/* Tombol Close (X) */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #2c3e50;
+}
+
+/* Animasi Muncul Pop-up */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Layout Media di dalam Modal (Flyer, Video, Insight) */
+.modal-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.modal-category {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.modal-description {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Temukan bagian ini di style.css kamu dan perbarui */
+.modal-gallery-grid .media-item img {
+    width: 100%;
+    /* JANGAN gunakan tinggi tetap seperti 200px! */
+    height: auto; /* Biarkan tinggi menyesuaikan otomatis */
+    max-height: 500px; /* Batasi tinggi agar modal tidak terlalu panjang di layar besar */
+    object-fit: contain; /* INI KUNCINYA: Masukkan seluruh gambar tanpa dipotong */
+    background-color: #eee; /* Latar belakang untuk area yang kosong */
+    border-radius: 6px;
+}
+
+.media-item {
+    background: #f1f2f6;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.media-item img, 
+.media-item iframe, 
+.media-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.media-caption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* Efek kursor pointer pada kartu portofolio */
+.card {
+    cursor: pointer;
+}
+
+/*KAROSELLL MENUU*/
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    background: #f1f2f6;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.carousel-slide {
+    display: none; 
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.carousel-slide img, 
+.carousel-slide iframe {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain; /* Foto utuh di slider */
+    display: block;
+    background-color: #e2e8f0;
+}
+
+.carousel-caption {
+    padding: 12px;
+    font-size: 0.9rem;
+    color: #444;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.carousel-prev, 
+.carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 12px 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+
+.carousel-prev:hover, 
+.carousel-next:hover {
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+
+/*BIODATA DAN FOTO*/
+/* =========================================
+   TAMBAHAN: LAYOUT FOTO & BIODATA
+========================================= */
+/* Container utama pembungkus foto dan tabel */
+.bio-container {
+    display: flex;
+    flex-direction: column; /* Default HP: Foto di atas, teks di bawah */
+    gap: 20px;
+    align-items: center;
+}
+
+/* Jika layar besar (Laptop/Tablet), ubah jadi menyamping */
+@media (min-width: 600px) {
+    .bio-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* Desain Foto Profile */
+.bio-photo img {
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat bingkai fotonya bulat sempurna */
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bio-details {
+    flex: 1; /* Biarkan bagian tabel memenuhi sisa ruang di sebelah kanan */
+    width: 100%;
+}
+
+/* Desain Tabel Biodata agar titik dua sejajar */
+.bio-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bio-table td {
+    padding: 6px 0;
+    vertical-align: top; /* Teks tetap di atas jika kolom kanan sangat panjang */
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Mengunci lebar Kolom 1 (Label Nama, Domisili, dll) */
+.bio-table td:nth-child(1) {
+    width: 100px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Mengunci lebar Kolom 2 (Khusus Titik Dua) */
+.bio-table td:nth-child(2) {
+    width: 15px;
+    text-align: center;
+}
+
+/* Kolom 3 (Isi biodata otomatis menyesuaikan sisa ruang) */
+.bio-table td:nth-child(3) {
+    font-weight: 400;
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Perancangan Simulasi Lampu Lalu Lintas Adaptif",
+    "category": "Computer Vision",
+    "type": "TI",
+    "tools": ["YOLOv8s", "Python", "OpenCV", "OBS"],
+    "description": "Membuat Simulasi Lampu Lalu Lintas Dengan Deteksi Arus Kendaraan Menggunakan YOLO sebagai syarat Tugas Akhir Skripsi",
+    "image": "./assets/img/projects/thumbnailprojek1.png",
+    "detail": {
+      "layoutStyle": "grid", 
+      "fullDescription": "Ketidakseimbangan volume kendaraan dan kapasitas infrastruktur sering diperburuk oleh lampu lalu lintas statis yang tidak responsif. Penelitian ini mengembangkan simulasi pengaturan lampu lalu lintas adaptif berbasis Computer Vision menggunakan algoritma YOLOv8s yang terintegrasi dengan logika distribusi waktu proporsional. Model deteksi yang dilatih menunjukkan performa andal dengan nilai mAP@0,5 sebesar 0,883. Hasil implementasi menunjukkan variabilitas kinerja berdasarkan kondisi pencahayaan; model mencapai Mean Absolute Percentage Accuracy (MAPA) sebesar 80,97% pada siang hari. Meskipun akurasi terkoreksi menjadi 61,53% pada malam hari akibat tantangan visual, pendekatan ini terbukti memiliki ketahanan (robustness) tinggi karena logika proporsional tetap mampu menjaga rasio kepadatan antarjalur secara presisi. Logika proporsional berhasil menghilangkan inefisiensi waktu (wasted green time) dengan menghasilkan durasi adaptif pada rentang 8–45 detik, serta menjamin keamanan operasional melalui mekanisme fail-safe batas minimum 5 detik. Hasil simulasi menunjukkan bahwa algoritma mampu menciptakan distribusi sinyal yang adil dan adaptif terhadap dinamika lalu lintas nyata.",
+      "mediaList": [
+        { "type": "image", "url": "./assets/img/projects/results.png", "caption": "Hasil Train Model YOLO"},
+        { "type": "image", "url": "./assets/img/projects/simulasi.png", "caption": "Simulasi Akhir"}
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Social Media Campaign (FLYER/POSTER)",
+    "category": "Multimedia",
+    "type": "MM",
+    "tools": ["Canva", "Sony α6000"],
+    "description": "Pembuatan aset visual marketing beserta poster kebutuhan klinik.",
+    "image": "./assets/img/projects/clinic-reels-cover.jpg",
+    "detail": {
+      "layoutStyle": "carousel",  
+      "fullDescription": "Dalam proses pembuatan flyer ataupun poster kebutuhan klinik, saya bertanggung jawab mengolah kebutuhan promosi menjadi desain visual yang informatif, menarik, dan mudah dipahami. Proses dimulai dengan memahami tujuan campaign, mengidentifikasi target audiens, serta mengumpulkan informasi penting seperti layanan, benefit, harga, dan periode promosi. Selanjutnya, saya menyusun konsep visual, menentukan hierarki informasi, memilih warna dan tipografi, hingga merancang layout yang sesuai dengan identitas klinik. Dalam pengerjaannya, saya memastikan setiap informasi tersampaikan dengan jelas, tetap menjaga keseimbangan komposisi, serta memperhatikan konsistensi visual. Ketika menghadapi kendala seperti keterbatasan ruang, banyaknya informasi, atau layout yang kurang seimbang, saya melakukan penyesuaian pada tata letak, ukuran teks, dan elemen visual agar desain tetap nyaman dibaca tanpa menghilangkan informasi penting. Hasil akhirnya adalah materi promosi yang tidak hanya menarik secara visual, tetapi juga mampu menyampaikan pesan campaign secara efektif dan mendukung kebutuhan komunikasi klinik.",
+      "mediaList": [
+        { "type": "image", "url": "./assets/img/projects/abu.jpg", "caption": "Poster Abu Vulkanik" },
+        { "type": "image", "url": "./assets/img/projects/flyer2.jpg", "caption": "Flyer Edukasi Kesehatan 2" },
+        { "type": "video", "url": "https://www.youtube.com/embed/contoh-link-video", "caption": "Video Reels Campaign (TikTok/IG)" },
+        { "type": "image", "url": "./assets/img/projects/insight.jpg", "caption": "Screenshot Insight: Menjangkau 50k+ Akun & Engagement Tinggi" }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Social Media Konten (Video)",
+    "category": "Multimedia",
+    "type": "MM",
+    "tools": ["Canva", "Capcut", "Sony α6000", "Mic Eksternal"],
+    "description": "Membuat Konten Reels/Tiktok untuk klinik.",
+    "image": "./assets/img/projects/clinic-reels-cover.jpg",
+    "detail": {
+      "fullDescription": "Campaign marketing digital untuk meningkatkan *brand awareness* klinik kesehatan melalui konten visual interaktif di Instagram dan TikTok.",
+      "mediaList": [
+        { "type": "image", "url": "./assets/img/projects/flyer1.jpg", "caption": "Flyer Promosi Program Diskon 1" },
+        { "type": "image", "url": "./assets/img/projects/flyer2.jpg", "caption": "Flyer Edukasi Kesehatan 2" },
+        { "type": "video", "url": "https://www.youtube.com/embed/contoh-link-video", "caption": "Video Reels Campaign (TikTok/IG)" },
+        { "type": "image", "url": "./assets/img/projects/insight.jpg", "caption": "Screenshot Insight: Menjangkau 50k+ Akun & Engagement Tinggi" }
+      ]
+    }
+  }
+]

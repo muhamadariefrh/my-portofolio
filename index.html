@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Arief</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Porto.</div>
+            <ul class="nav-links">
+                <li><a href="#portfolio-section">Beranda</a></li>
+                <li><a href="#profile-section">Profile</a></li>
+                <li><a href="#summary-section">Summary</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section (Header) -->
+    <header class="hero fade-in">
+        <div class="container">
+            <h1>Halo, Saya Muhamad Arief Rachman Hakim</h1>
+            <p>Teknik Informatika | Multimedia Specialist</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- 3. Section Portofolio (Beranda) -->
+        <section id="portfolio-section" class="portfolio-section fade-in">
+            <h2 class="section-title">Karya & Project</h2>
+            <div id="project-container" class="grid-container"></div>
+        </section>
+
+        <!-- 4. Section Profile (Isi CV & Biodata) -->
+        <section id="profile-section" class="profile-section fade-in">
+            <h2 class="section-title fade-in">Profile</h2>
+            <div class="profile-card fade-in" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <p>Saya merupakan mahasiswa Teknik Informatika Universitas Muhammadiyah Prof. Dr. Hamka yang memiliki ketertarikan pada bidang teknologi, pengembangan web, jaringan komputer, dan desain multimedia. Saya memiliki pengalaman dalam pengelolaan jaringan berbasis MikroTik, pengembangan perangkat lunak, serta pembuatan konten visual untuk kebutuhan promosi dan media sosial. 
+                <p><br>Selain itu, saya memiliki pengalaman mengerjakan proyek penelitian berbasis Computer Vision menggunakan YOLO untuk mendeteksi arus kendaraan, serta pengalaman profesional di bidang multimedia, mulai dari perancangan tata letak hingga pengelolaan konten digital.</p>
+                <p><br>Saya adalah pribadi yang adaptif, kreatif, dan memiliki semangat belajar yang tinggi. Saya senang mengeksplorasi hal baru, mengembangkan keterampilan, serta menggabungkan kemampuan teknis dan kreativitas untuk menghasilkan solusi yang efektif dan bermanfaat.</p>
+                </p>
+                <!-- Kamu bisa buat layout 2 kolom pakai grid/flexbox di sini nantinya -->
+                    <!-- Kolom Kiri: Biodata & Pendidikan -->
+                <div class="profile-card fade-in" style="padding: 25px;">
+                    <h3 style="margin-bottom: 20px;">Tentang Saya</h3>
+                    
+                    <div class="bio-container">
+                        <!-- Bagian Kiri: Foto Profile -->
+                        <div class="bio-photo">
+                            <!-- Ganti URL ini dengan lokasi fotomu -->
+                            <img src="./assets/img/projects/Pas Foto.png" alt="Foto Profile Arief">
+                        </div>
+                        
+                        <!-- Bagian Kanan: Tabel Biodata -->
+                        <div class="bio-details">
+                            <table class="bio-table">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td>Arief</td>
+                                </tr>
+                                <tr>
+                                    <td>Pendidikan</td>
+                                    <td>:</td>
+                                    <td>S1 Teknik Informatika (Universitas Muhammadiyah Prof. Dr. Hamka)</td>
+                                </tr>
+                                <tr>
+                                    <td>No. HP</td>
+                                    <td>:</td>
+                                    <td>089521181208</td>
+                                </tr>
+                                <tr>
+                                    <td>Domisili</td>
+                                    <td>:</td>
+                                    <td>Kota Bekasi</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kolom Kanan: Sertifikasi -->
+                <div class="profile-card fade-in" style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 15px;">Lisensi & Sertifikasi</h3>
+                    
+                    <!-- Container untuk Kartu Sertifikat -->
+                    <div id="cert-container" class="cert-grid"></div>
+                </div>
+                
+        </section>
+
+        <!-- 5. Section Summary (Rasio Animasi Game) -->
+         <!-- Ubah bagian Progress Bar di dalam section Summary -->
+
+        <section id="summary-section" class="summary-section fade-in">
+            <h2 class="section-title">Summary</h2>
+            <div class="summary-content">
+                <p>Rangkuman perjalanan dari project Teknik Informatika hingga eksplorasi kreatif di bidang Multimedia.</p>
+                
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Teknik Informatika</span>
+                                <!-- Tambahkan id="ti-angka" -->
+                            <span id="ti-angka">0%</span>
+                        </div>
+                        <div class="progress-track">
+                             <!-- Tambahkan id="ti-bar" dan hapus nilai default style-nya -->
+                            <div id="ti-bar" class="progress-fill ti-fill" style="--target: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Multimedia</span>
+                            <!-- Tambahkan id="mm-angka" -->
+                             <span id="mm-angka">0%</span>
+                        </div>
+                        <div class="progress-track">
+                            <!-- Tambahkan id="mm-bar" dan hapus nilai default style-nya -->
+                            <div id="mm-bar" class="progress-fill mm-fill" style="--target: 0%;"></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 6. Footer (Paling Bawah) -->
+    <footer>
+        <p>&copy; 2026 MARH. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    </footer>
+    <!-- Modal / Pop-up Detail Project -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <div id="modal-body">
+                <!-- Konten pop-up akan otomatis dimasukkan oleh JavaScript di sini -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
